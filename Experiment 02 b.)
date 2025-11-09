@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    float radius, length, width, side;
+    float areaCircle, periCircle;
+    float areaRect, periRect;
+    float areaSquare, periSquare;
+    float pi = 3.14;
+
+    // Circle
+    printf("Enter radius of circle: ");
+    scanf("%f", &radius);
+    areaCircle = pi * radius * radius;
+    periCircle = 2 * pi * radius;
+
+    // Rectangle
+    printf("\nEnter length and width of rectangle: ");
+    scanf("%f %f", &length, &width);
+    areaRect = length * width;
+    periRect = 2 * (length + width);
+
+    // Square
+    printf("\nEnter side of square: ");
+    scanf("%f", &side);
+    areaSquare = side * side;
+    periSquare = 4 * side;
+
+    // Output results
+    printf("\n===== RESULTS =====\n");
+    
+    printf("\nCircle:\n");
+    printf("Area = %.2f\n", areaCircle);
+    printf("Perimeter = %.2f\n", periCircle);
+
+    printf("\nRectangle:\n");
+    printf("Area = %.2f\n", areaRect);
+    printf("Perimeter = %.2f\n", periRect);
+
+    printf("\nSquare:\n");
+    printf("Area = %.2f\n", areaSquare);
+    printf("Perimeter = %.2f\n", periSquare);
+
+    return 0;
+}
